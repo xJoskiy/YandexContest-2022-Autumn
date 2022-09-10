@@ -1,4 +1,4 @@
-def search(plan, x, y, direction=None):
+def search(plan, x, y):
     if plan[x + 1][y] == '0':
         plan[x + 1] = plan[x + 1][:y] + 'U' + plan[x + 1][y + 1:]
         search(plan, x + 1, y)
